@@ -1,7 +1,6 @@
 import { Box } from "@mui/material";
 import ChatHeader from "./ChatHeader.jsx";
 import Messages from "./Messages.jsx";
-// import Footer from "./Footer.jsx";
 import { useContext, useEffect, useState } from "react";
 import { AccountContext } from "../../constants/contexts/AccountProvider.jsx";
 import { getConversation } from "../../../service/api.js";
