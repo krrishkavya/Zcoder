@@ -4,7 +4,7 @@ configDotenv();
 const user=process.env.user;
 const pass=process.env.password;
 //here also we use try and catch error block
-const URL=`mongodb://${user}:${pass}@ac-dr7qtrn-shard-00-00.nproz9z.mongodb.net:27017,ac-dr7qtrn-shard-00-01.nproz9z.mongodb.net:27017,ac-dr7qtrn-shard-00-02.nproz9z.mongodb.net:27017/?ssl=true&replicaSet=atlas-ipvt6j-shard-0&authSource=admin&retryWrites=true&w=majority&appName=whatsapp-clone`
+const URL=`mongodb+srv://${user}:${pass}@cluster0.kevcjxt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
 const  connection = async () =>{
     try{
         // using function to connect url id the url needed and useunified topology is detailed in the end
