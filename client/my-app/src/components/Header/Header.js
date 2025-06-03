@@ -82,6 +82,9 @@ const RiHeader = () => {
   const cl4 = () => {
     setPage(4);
   }
+  const cl5 = () => {
+    setPage(6);
+  }
   
   return (
     <HeaderContainer position="static">
@@ -91,7 +94,8 @@ const RiHeader = () => {
           <NavigationButton className="ello" onClick={cl1}>Profile</NavigationButton>
           <NavigationButton className="ello" onClick={cl2}>Contests</NavigationButton>
           <NavigationButton className="ello" onClick={cl3}>Community</NavigationButton>
-          <NavigationButton className="ello" onClick={cl4}>Chat</NavigationButton>
+          <NavigationButton className="ello" onClick={cl4}>Chat</NavigationButton>  
+          <NavigationButton className="ello" onClick={cl5}>Code</NavigationButton>  
           <LoginButton className="bttnlogin" onClick={logOut}>Logout</LoginButton>
         </Box>
       </Toolbar>

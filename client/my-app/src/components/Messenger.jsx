@@ -7,6 +7,7 @@ import ContestMain from "./Contest/ContestMain";
 import Community from "./Community/Community";
 import EditProfile from "./EditProfile/editProfile";
 import Profile from "./Profile/profile";
+import CodeCompiler from "./codeCompiler/codeCompiler";
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -59,6 +60,8 @@ function Messenger() {
         return <ChatDialog />;
       case 5:
         return <EditProfile />;
+      case 6: 
+        return <CodeCompiler/>;
       default:
         return <ContestMain />;
     }
